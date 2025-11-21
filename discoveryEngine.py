@@ -3,13 +3,7 @@
  * It uses the Message ID to prevent duplicate entries on subsequent runs. Sowparnika Nair, GAIN
  */
 function getEmailsToSheet() {
-  // ----------------------------------------------------
-  // 1. CONFIGURATION: Customize your search query here.
-  // This example searches for all emails labeled "Invoices".
-  // Replace 'label:Invoices' with your desired query (e.g., 'from:sales@company.com subject:Order').
   const SEARCH_QUERY = "to:info@gain-ai.org";
-  // ----------------------------------------------------
-
   const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
   
   // Use GmailApp.search() to find all threads matching your query.
